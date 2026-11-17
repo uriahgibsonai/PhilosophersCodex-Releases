@@ -1,6 +1,6 @@
 {
-  "version": "1.10.1",
+  "version": "1.10.2",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.10.1/PhilosophersCodex.zip",
-  "changelog": "**Mage and Warlock Goals are filled out.** The Goals tab on those classes was almost empty: only the Trainer spells header showed, and the spell list itself could come up blank. **Settings sliders no longer overlap the text below them.** Each slider is a 70px block with the current value in the title and the Low/High labels hidden."
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.10.2/PhilosophersCodex.zip",
+  "changelog": "Goals, tabs, the header, and the minimap now use icons for your class instead of the Druid regeneration icon everywhere. Trainer spell rows use each spell's own icon when the client knows it, or a curated Classic icon if not. Mage uses Frostbolt / Arcane Intellect / cloth, Warlock uses Shadow Bolt / pets / cloth, and Druid keeps its nature and leather look."
 }
