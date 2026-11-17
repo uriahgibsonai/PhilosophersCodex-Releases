@@ -1,6 +1,6 @@
 {
-  "version": "1.10.0",
+  "version": "1.10.1",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.10.0/PhilosophersCodex.zip",
-  "changelog": "Guild update notice and an Update button that copies the public download link. In-game Issues page for caught errors and missing data (/codex issues, Copy and Clear). Windows updater script in the zip reads latest.json, backs up the old folder, and installs the new one."
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.10.1/PhilosophersCodex.zip",
+  "changelog": "**Mage and Warlock Goals are filled out.** The Goals tab on those classes was almost empty: only the Trainer spells header showed, and the spell list itself could come up blank. **Settings sliders no longer overlap the text below them.** Each slider is a 70px block with the current value in the title and the Low/High labels hidden."
 }
