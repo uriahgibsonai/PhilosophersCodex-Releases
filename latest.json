@@ -1,6 +1,6 @@
 {
-  "version": "1.16.0",
+  "version": "1.17.0",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.16.0/PhilosophersCodex.zip",
-  "changelog": "**Settings checkboxes no longer stretch.** The check \"X\" was stretching into a long line across the panel because layout widened every control under 40px to 400px, and the template's checked texture uses SetAllPoints. **Works out of the box.** Available to group, questing buddies, and dungeon matching are on by default. **A streamlined Guild tab.** Your card still has a portrait, name, level, class, and a class-specific role picker. **The list only shows people who want the same thing.** Matches / All guild are gone. **Need help reaches higher-level helpers.** When you need help, the list is not limited to nearby levels. **Demo covers every status.** Turn on Demo (or `/codex demo on`) and switch pills to preview dungeon, questing, and Need help lists, including a level 60 helper."
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.17.0/PhilosophersCodex.zip",
+  "changelog": "**Cleaner rows.** Every list row now shares one right-to-left layout helper, so titles, tags like Demo, and mark-done circles no longer overlap. **Mini tracker player card.** The always-open tracker now starts with your portrait, name, role (tap to cycle the roles your class can play), and status pills that match the Guild tab. **No empty tips popup.** Tapping a dungeon tile on Next opens the Path tab only."
 }
