@@ -1,6 +1,6 @@
 {
-  "version": "1.12.0",
+  "version": "1.13.0",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.12.0/PhilosophersCodex.zip",
-  "changelog": "**Next is just Tonight and what's next.** The level-bracket dungeon list at the bottom was the same one you already have on Path, so it is gone. **Path recommends a zone and marks where you are.** A Recommended zone card at the top names the best zone for your level, race, and Alliance route, says why, and has a waypoint pin. **Craft is a drill-down.** The landing page lists each of your professio"
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.13.0/PhilosophersCodex.zip",
+  "changelog": "**Text stays inside the window.** The default window is larger (460\u00d7720), and a saved size still at the old 400\u00d7660 default is bumped up. **Next is one list of what to do next.** The separate Today and Tonight panels are gone. **Craft returns to the profession list** whenever you leave the tab or close the window, so a detail page does not stay open."
 }
