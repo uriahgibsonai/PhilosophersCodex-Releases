@@ -1,6 +1,6 @@
 {
-  "version": "1.13.0",
+  "version": "1.14.0",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.13.0/PhilosophersCodex.zip",
-  "changelog": "**Text stays inside the window.** The default window is larger (460\u00d7720), and a saved size still at the old 400\u00d7660 default is bumped up. **Next is one list of what to do next.** The separate Today and Tonight panels are gone. **Craft returns to the profession list** whenever you leave the tab or close the window, so a detail page does not stay open."
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.14.0/PhilosophersCodex.zip",
+  "changelog": "**Gear recommendations stay in your level window.** The Gear tab now recommends pieces you can actually get soon: required level no more than three above you, from a dungeon or zone in range, usable by your class, and better than what you are wearing when the scorer can tell. **Path shows the quests to pick up in each zone.** Open a zone on the Path tab to see a parent/child list: the chain starter on top, follow-ups indented beneath it. **Goals groups start closed.** Trainer spells by level, and every other Goals group, begin collapsed. **Craft resets Other professions.** The Other professions section starts collapsed again when you leave the Craft tab or close the window, the same way profession detail is reset. **Guild tab is a group finder.** Your card at the top shows a circular portrait, name, level, class color, zone, and a status pill. **Demo guildmates (off by default).** To preview the Guild tab with a fake roster, turn on **Demo guildmates** in Settings or type `/codex demo on`."
 }
