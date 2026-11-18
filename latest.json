@@ -1,6 +1,6 @@
 {
-  "version": "1.17.1",
+  "version": "1.18.0",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.17.1/PhilosophersCodex.zip",
-  "changelog": "**The tracker shows the zone you're actually in.** Questing status on the mini player card could say \"Questing in Loch Modan\" after you'd already walked to Westfall, because it preferred a saved activity zone over the live map. **Section cards under the player card.** The old next-step / zone / progress block is replaced by a compact grid of cards for Next, Path, Goals, Gear, Craft, and Guild."
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.18.0/PhilosophersCodex.zip",
+  "changelog": "**Alchemy namecard tracker.** The always-open tracker is now a compact magical alchemy namecard: a gold filigree border, dark parchment with a faint arcane gradient, a slowly rotating sigil behind your portrait in a gold ring, your name in class color, an Alchemists guild tag, and level plus role. **Available names under the count.** Below \"N guildmates available\" the tracker shows a compact, wrapping row of names in class colors (up to two lines, then \"+N more\"). **Status is labeled, and resets on login.** A Status label sits next to the status pills on the tracker and the Guild tab. **Gear upgrades are easier to read.** Item IDs are no longer shown on Gear rows. **Dungeon icons.** Each dungeon uses its official LFG / loading-screen art (`Interface\\LFGFrame\\LFGIcon-...`) when the client has it, cropped and masked to a circle."
 }
