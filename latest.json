@@ -1,6 +1,6 @@
 {
-  "version": "1.17.0",
+  "version": "1.17.1",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.17.0/PhilosophersCodex.zip",
-  "changelog": "**Cleaner rows.** Every list row now shares one right-to-left layout helper, so titles, tags like Demo, and mark-done circles no longer overlap. **Mini tracker player card.** The always-open tracker now starts with your portrait, name, role (tap to cycle the roles your class can play), and status pills that match the Guild tab. **No empty tips popup.** Tapping a dungeon tile on Next opens the Path tab only."
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.17.1/PhilosophersCodex.zip",
+  "changelog": "**The tracker shows the zone you're actually in.** Questing status on the mini player card could say \"Questing in Loch Modan\" after you'd already walked to Westfall, because it preferred a saved activity zone over the live map. **Section cards under the player card.** The old next-step / zone / progress block is replaced by a compact grid of cards for Next, Path, Goals, Gear, Craft, and Guild."
 }
