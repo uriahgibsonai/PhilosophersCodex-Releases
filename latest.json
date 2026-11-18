@@ -1,6 +1,6 @@
 {
-  "version": "1.18.0",
+  "version": "1.18.1",
   "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.18.0/PhilosophersCodex.zip",
-  "changelog": "**Alchemy namecard tracker.** The always-open tracker is now a compact magical alchemy namecard: a gold filigree border, dark parchment with a faint arcane gradient, a slowly rotating sigil behind your portrait in a gold ring, your name in class color, an Alchemists guild tag, and level plus role. **Available names under the count.** Below \"N guildmates available\" the tracker shows a compact, wrapping row of names in class colors (up to two lines, then \"+N more\"). **Status is labeled, and resets on login.** A Status label sits next to the status pills on the tracker and the Guild tab. **Gear upgrades are easier to read.** Item IDs are no longer shown on Gear rows. **Dungeon icons.** Each dungeon uses its official LFG / loading-screen art (`Interface\\LFGFrame\\LFGIcon-...`) when the client has it, cropped and masked to a circle."
+  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.18.1/PhilosophersCodex.zip",
+  "changelog": "**The alchemy namecard shows up again.** 1.18.0 could fail while building the gold corner studs: `SetPoint(\"TOPLEFT\", \"TOPLEFT\", 0, 0)` looks up a region named TOPLEFT on the real Forever client and throws. **Decoration cannot hide the card.** The mini frame is created with BackdropTemplate when the client has it, each decorative layer (parchment, gradient, backdrop, edges, studs, sigil spin) is isolated in its own pcall, and a failure is written to the Issues log. **Saved geometry is clamped.** Off-screen or zero-sized saved positions are discarded and the card is placed next to the minimap."
 }
