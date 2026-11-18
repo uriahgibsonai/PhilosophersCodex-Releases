@@ -215,7 +215,8 @@ try {
 
     $cmp = Compare-Versions $installed $latest
     if ($cmp -ge 0 -and (Test-Path -LiteralPath $tocPath)) {
-        Write-Info "You already have $installed, which is current (latest is $latest). Nothing to install."
+        Write-Info "You already have $installed at $addonDir, which is current (latest is $latest). Nothing to install."
+        Write-Info "If the game still shows an older version, type /reload in game or restart WoW. /codex version prints what loaded."
         if ($CopyReports -or (Test-Path -LiteralPath (Join-Path $root "WTF\Account"))) {
             if ($CopyReports) {
                 Copy-SavedVariableReports $root $ReportsDir
@@ -259,7 +260,10 @@ try {
 
         if (Test-Path -LiteralPath $addonDir) {
             $stamp = Get-Date -Format "yyyyMMdd-HHmmss"
-            $backup = Join-Path $AddOnsPath ($AddonName + ".bak-" + $stamp)
+            # Keep backups outside AddOns so the game never sees a second copy.
+            $backupRoot = Join-Path (Split-Path $AddOnsPath -Parent) "PhilosophersCodex-backups"
+            New-Item -ItemType Directory -Force -Path $backupRoot | Out-Null
+            $backup = Join-Path $backupRoot ($AddonName + ".bak-" + $stamp)
             Write-Info "Backing up current folder to $backup"
             Move-Item -LiteralPath $addonDir -Destination $backup
         }
@@ -280,8 +284,29 @@ try {
         }
 
         $finalVer = Read-TocVersion (Join-Path $addonDir "$AddonName.toc")
-        Write-Info "Installed Philosopher's Codex $finalVer."
-        Write-Info "Restart WoW Forever or type /reload in game."
+        if (-not $finalVer) {
+            Write-Err "After install there is no readable TOC at $addonDir\$AddonName.toc."
+            exit 1
+        }
+        if ((Compare-Versions $finalVer $latest) -ne 0) {
+            Write-Err "Installed TOC says $finalVer but the latest release is $latest. The install did not take."
+            exit 1
+        }
+        Write-Info "Verified: $addonDir\$AddonName.toc is version $finalVer."
+
+        # A zip unpacked by hand into the addon folder leaves AddOns\PhilosophersCodex\PhilosophersCodex.
+        $nested = Join-Path $addonDir $AddonName
+        if (Test-Path -LiteralPath (Join-Path $nested "$AddonName.toc")) {
+            Write-Warn "Found a nested copy at $nested. The game ignores it; delete it to avoid confusion."
+        }
+
+        $running = Get-Process -ErrorAction SilentlyContinue | Where-Object { $_.ProcessName -match '^Wow' }
+        if ($running) {
+            Write-Warn "WoW is running. Type /reload in game (or restart) so it loads $finalVer."
+        } else {
+            Write-Info "Start WoW Forever to load $finalVer."
+        }
+        Write-Info "In game, the main window header should read 'Alchemists - v$finalVer'. /codex version also prints it."
 
         if ($CopyReports) {
             Copy-SavedVariableReports $root $ReportsDir
