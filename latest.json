@@ -1,6 +1,6 @@
 {
-  "version": "1.18.2",
-  "date": "2026-11-17",
-  "zipUrl": "https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/download/v1.18.2/PhilosophersCodex.zip",
-  "changelog": "**ID card tracker.** The tracker is now a compact ID card with the gold border: a square portrait in a thin gold frame, your name in class color, <Alchemists>, level, class, and your role icon, then the Status buttons and a stats strip. **Collapsed by default, with an expand tab.** The card starts collapsed. **Shown by default.** Every character gets the tracker shown once with this update, even if an earlier `/codex mini` hid it. **Bigger main window.** The default is now 560 x 800, capped at 85% of your screen height. **The namecard is built in two phases.** Phase 1 always makes a plain card: solid background, gold border lines, portrait, name, and the status buttons, anchored under the minimap. **Show tracker button.** The main window header has a new alchemy button that rebuilds the namecard and puts it under the minimap, the same as `/codex mini reset`. **Clearer slash commands.** Extra spaces and capitals no longer matter. **Version in the header.** The main window shows \"Alchemists \u00b7 v1.18.2\" under the title, so you can confirm which copy the game loaded."
+  "version": "1.25.0",
+  "date": "2026-11-19",
+  "zipUrl": "https://raw.githubusercontent.com/uriahgibsonai/PhilosophersCodex-Releases/main/downloads/PhilosophersCodex-1.25.0.zip",
+  "changelog": "**Every Alliance class now has a guide.** Priest, Paladin, Warrior and Rogue join Druid, Mage, Warlock, Hunter and Shaman. Each has roles, stat priorities, upgrade scoring, class milestones, and trainer spells 1-60 from 60.tools Forever data with \"What it does\" text. Forever-only spells (Priest Starshards and Hex of Weakness, Paladin Holy Strike and Voice of Truth, Warrior Victory Rush) are included. **Gear rules:** plate unlocks at 40 for Paladins and Warriors, Warriors dual wield from 20, and Rogues from level 1."
 }

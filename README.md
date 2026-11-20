@@ -6,7 +6,7 @@ The source code lives in a private repository. This repository is only for insta
 
 ## Install (first time)
 
-1. Open the [latest release](https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases/latest) and download `PhilosophersCodex.zip`.
+1. Download the latest zip: [PhilosophersCodex.zip](https://raw.githubusercontent.com/uriahgibsonai/PhilosophersCodex-Releases/main/downloads/PhilosophersCodex.zip) (current version: 1.25.0). Older versions are in the [`downloads`](downloads) folder and the [releases](https://github.com/uriahgibsonai/PhilosophersCodex-Releases/releases) page.
 2. Extract it so you have:
 
    `World of Warcraft\_forever_\Interface\AddOns\PhilosophersCodex\`
